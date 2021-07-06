@@ -1,0 +1,164 @@
+*{
+	 box-sizing: border-box;
+	 }	
+
+{
+	margin: 0;
+	padding: 0;
+	font-family : sans-serif;
+	background:  #d5e1df;
+	background-size:cover;
+	background-position: center;
+	
+	
+}
+body
+ 
+.header{
+	background-color: #B0C4DE;
+	padding: 20px 10px;
+	text-align: center;
+
+
+}
+
+h1 {
+	font-family: Copperplate;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: Arial, Melvetica, sans-serif;
+}
+* {box-sizing: border-box}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: black;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  width: 16.666%; /* six links of equal widths */
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: grey;
+}
+
+.navbar a.active {
+  background-color: black;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+ {
+  box-sizing:border-box;
+}
+
+.body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  padding: 64px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both
+}
+
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+  
+}
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.large-font {
+  font-size: 45px;
+}
+
+.xlarge-font {
+  font-size: 64px
+}
+.expire {
+  color: red;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .column-66,
+  .column-33 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+
+.footer-container {
+	background-color: #212329;
+	padding-bottom: 6rem;
+}
+
+.footer-container {
+	background-color: #212329;
+	padding-bottom: 5rem;
+}
+
+.footer {
+	width: 80%;
+	height: 40vh;
+	background-color: #212329;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.footer-heading {
+	display: flex;
+	flex-direction: column;
+	margin-right: 8rem;
+}
+
+.footer-heading h2 {
+	margin: 2rem;
+	margin-bottom: 2rem;
+}
+
+.footer-heading p {
+	margin-bottom: 2rem;
+}
+
+.footer-heading a {
+	color: #fff;
+	text-decoration: none;
+	margin-bottom: 2rem;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOME</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="Index.css"/>
+</head>
+<body>
+
+	<div class="header">
+			<img src="Home Photos/logo ezfrozenfood.png" alt="" style="width:150px;height:150px"/>
+	<div class="header-right">
+			<h1> EZfrozen Food </h1>
+	</div>
+	</div>
+
+	<div class="navbar">
+  		<a href="Index.html">Home</a> 
+  		<a href="About us.html">About Us</a> 
+  		<a href="Services.html">Services</a>
+		<a href="Products.html">Products</a>
+		<a href="Promotion.html">Promotion</a>
+		<a href="Contact.html">Contact</a>
+		</div>
+	</div>
+
+
+			
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="Home Photos/property Ezfrozen Food.jpg" alt="" style="width:1024px;height:350px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="Home Photos/Ezfrozen Foods Members.jpg" alt="" style="width:1080px;height:500px">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="Home Photos/product.jpg" alt="" style="width:1080px;height:450px">
+</div>
+<br>
+
+</div>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script type="text/javascript">
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div style= "font-size: 50px;padding:15px;text-align:center;">
+  <h5>WELCOME TO THE EZFROZEN FOOD</h5>
+</div>
+
+<br><br>
+</br></br>
+
+<div class="section">
+			<div class="header.container">
+				<div class="content-section">
+					<div class="title">
+						<h1>ABOUT US</h1>
+					</div>
+				
+				<div class="content">
+						<h3> History </h3>
+						<p>EZfrozen Food, started from the home business in 2019 whereby we produce the frozen "kuih-muih" products at first such as curry puff, steam bun, doughnuts and market it through the social media. In 2021, the beginning of the year which is 7th January 2021, EZfrozen Food successfully achieved first achievement which is bought for the own property at Jalan Sutera, Johor Bahru to run the frozen food business.
+						<span id="dots">...</span><span id="more">EZfrozen Food also started improve and produce the variation of food products that some of them are acquired from the suppliers and handmade. For improving the business was really takes time but EZfrozen Food will never give up to achieve our mission and vision of the company's establishment.</span></p>
+						<button onclick="myFunction()" id="myBtn">Read more</button>
+						</div>
+						</div>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+<div class="image-section">
+	<img src="Home Photos/property Ezfrozen Food.jpg" alt="" style="width:500px;height:470px"/>
+	</div>
+					
+
+<div style="padding:20px;text-align:center;">
+	<h3> FRESHLY DELICIOUS</h3>
+	</div>
+	
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('selling')"> Hot Selling</button>
+ 
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column hot selling">
+    <div class="content">
+      <img src="Home Photos/karipap Ezfrozen Food.jpg" alt="" style="width:100%">
+      <h4>Karipap</h4>
+    </div>
+  </div>
+  <div class="column hot selling">
+	<div class="content">
+      <img src="Home Photos/roti canai Ezfrozen Food.jpg" alt="" style="width:100%">
+      <h4>Roti Canai</h4>
+    </div>
+  </div>
+  <div class="column hot selling">
+    <div class="content">
+      <img src="Home Photos/pau Ezfrozen Food.jpg" alt="" style="width:100%">
+      <h4>Pau</h4>
+    </div>
+  </div>
+ <div class="column show all">
+    <div class="content">
+      <img src="Home Photos/donut Ezfrozen Food.jpg" alt="" style="width:100%">
+      <h4>Donut</h4>
+    </div>
+ </div>
+ <div class="column show all">
+    <div class="content">
+      <img src="Home Photos/murtabak Ezfrozen Food.jpg" alt="" style="width:100%">
+      <h4>Murtabak</h4>
+    </div>
+  </div>
+  <div class="column show all">
+    <div class="content">
+      <img src="Home Photos/popia Ezfrozen Food.jpg" alt="" style="width:100%">
+      <h4>Popia</h4>
+    </div>
+  </div>
+  
+ 
+<!-- END GRID -->
+</div>
+	
+<script type="text/javascript">
+	filterSelection("all") 
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+ 
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+<div class="footer-container">
+			<div class="footer">
+				<div class="footer-heading footer-1">
+				<h2> COMPANY </h2>
+				<a href="About us.html""active">ABOUT US</a>
+				<a href="Services.html""active">SERVICES</a>
+				<a href="Products.html""active">PRODUCTS</a>
+				<a href="Promotion.html""active">PROMOTION</a>
+				<a href="Contact.html""active">CONTACT</a>	
+				</div>
+			
+				<div class="footer-heading footer-2">
+				<h2> ADDRESS</h2>
+					<p> 101, Jalan Sutera 1, <br><br>Taman Sentosa,<br><br> 
+					80150 Johor Bahru, Johor</br></br></p 1>
+				</div>
+
+				<div class="footer-heading footer-3">
+				<h2>CONTACT INFO</h2>
+					<p> &#128242; + 6010-5522359</p>
+					<p> &#128242; + 6017-7950571</p>
+					<p> &#128242; + 6011-15117633</p>
+				</div>
+			
+	
+	
+
+</body>
+</html> 
